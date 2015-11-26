@@ -3,9 +3,12 @@
 <head>
     <!--Bootstrap Link-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/spacelab/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <!--CSS link-->
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.css">
+    <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.date.css">
+
+    
   <title>Travel</title>
 </head>
 <body>
@@ -109,8 +112,24 @@
     <!--END OF CAROUSEL HEADER-->
 
     <!--START OF SEARCH FIELD THAT WILL BE USED AS MODAL-->
-    <div class="search-background">
-        </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-12">
+        <button class="btn btn-default btn-large" data-toggle="modal" data-target="#myModal">
+          Search For Hotels 
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="container">
+  <div class="modal fade" id="myModal" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>   
+      <div class="search-background"> </div>
             <div class="well-searchbox">
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
@@ -119,39 +138,36 @@
                             <input type="text" class="form-control" placeholder="City">
                         </div>
                     </div>                   
-                <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="col-md-4 control-label">Check In</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Check In Date">
+                            <fieldset>
+                              <input type="text" id="input_from">
+                            </fieldset>
                         </div>
                     </div>
-
-                    
-                <form class="form-horizontal" role="form">
+                    <div class="datepicker">        
                     <div class="form-group">
                         <label class="col-md-4 control-label">Check Out</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Check Out Date">
+                            <fieldset>
+                              <input type="text" id="input_to">
+                            </fieldset>
                         </div>
                     </div>
-
-                    
-                <form class="form-horizontal" role="form">
+                    </div>                                   
                     <div class="form-group">
                         <label class="col-md-4 control-label">Star Rating</label>
                         <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="Star Rating">
                         </div>
                     </div>
-                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="col-md-4 control-label">Amenities</label>
                         <div class="col-md-8">
                             <input type="text" class="form-control" placeholder="Amenities">
                         </div>
                     </div>
-                   <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="col-md-4 control-label">Price</label>
                         <div class="col-md-8">
@@ -163,16 +179,29 @@
                     </div>
                 </form>
             </div>
+        </div>   
+    </div>
+</div>
+
+
+
+
+
   <!--END OF SEARCH FIELD THAT WILL BE USED AS MODAL-->             
             
   
 
   
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/travel.js"></script>
-  <script type="text/javascript" src="js/picker.date.js"></script>
-  <script type="text/javascript" src="js/carouselHeader.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <a href="http://http://amsul.github.io/pickadate.js">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/picker.js"></script>
+  <script type="text/javascript" src="js/picker.date.js"></script>
+  <script type="text/javascript" src="js/travel.js"></script>
+  <script type="text/javascript" src="js/carouselHeader.js"></script>
+
+  
 </body>
 </html>
