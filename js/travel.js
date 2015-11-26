@@ -1,18 +1,18 @@
 $(document).ready(function() {
   $("#myModal").on("hide.bs.modal", function() {
-    $("[data-target='#myModal']").fadeTo("slow", 0.25);
+    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
   })
  //$(".well-searchbox").addClass("picker");//
 //$("#checkinPicker").addClass("picker");
 // })
 
 var from_$input = $('#input_from').pickadate({
-  containerHidden: '#myModal'
+  containerHidden: '#modalSearch'
 })
     from_picker = from_$input.pickadate('picker')
 
 var to_$input = $('#input_to').pickadate({
-  containerHidden: '#myModal'
+  containerHidden: '#modalSearch'
 })
     to_picker = to_$input.pickadate('picker')
 
