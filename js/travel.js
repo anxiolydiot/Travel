@@ -1,20 +1,24 @@
 $(document).ready(function() {
   $("#myModal").on("hide.bs.modal", function() {
     $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
+
   })
+
+$("#searchHotelModal").on("hide.bs.modal", function() {
+    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
+  
+ })
+
  //$(".well-searchbox").addClass("picker");//
 //$("#checkinPicker").addClass("picker");
 // })
 
-var from_$input = $('#input_from').pickadate({
-  containerHidden: '#modalSearch'
-})
+var from_$input = $('#input_from').pickadate(),
     from_picker = from_$input.pickadate('picker')
 
-var to_$input = $('#input_to').pickadate({
-  containerHidden: '#modalSearch'
-})
+var to_$input = $('#input_to').pickadate(),
     to_picker = to_$input.pickadate('picker')
+
 
 
 // Check if there’s a “from” or “to” date to start with.
@@ -42,5 +46,21 @@ to_picker.on('set', function(event) {
     from_picker.set('max', false)
   }
 })
+
+//check for blank required fields//
+
+var checkInDate = $("#input_from").val().trim();
+var checkOutDate = $("#input_to").val().trim();
+var city = $("#input_city").val().trim();
+
+$("#searchButton").click(function() {
+  if (checkInDate === "" || checkOutDate === "" || city === ""){
+       $("#blankRequired").slideup(500);
+      return;
+    };
+  })
+
 });
+
+
 

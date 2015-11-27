@@ -123,53 +123,77 @@
   </div>
    <!--End Of Button That Triggers Modal-->
    <!--Modal With Search Parameters-->
-<div class="container" id= "modalSearch">
-  <div class="modal fade" id="myModal" data-backdrop="static">
-    <div class="modal-dialog">
-      <div class="modal-content">
-          <button class="close" data-dismiss="modal"><span>&times;</span></button>
-      </div>   
-      <div class="search-background"> </div>
+<div class="container" id="modalSearch">
+    <div class="modal fade" id="myModal" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-dismiss="modal"><span>&times;</span>
+                </button>
+            </div>
+            <div class="search-background"> 
             <div class="well-searchbox">
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="col-md-4 control-label"></label>
                         <div class="col-md-8">
-                        <fieldset>
-                            <input type="text" class="form-control" id="input_city" placeholder="City">
-                         </fieldset>             
-                         <fieldset>
-                            <input type="text" class="form-control" id="input_from" placeholder="Check In Date">
-                         </fieldset>
-                         <fieldset>
-                            <input type="text" class="form-control" id="input_to" placeholder="Check Out Date">
-                         </fieldset> 
-                <!--Optional Fields for User (Not Required for them to search)-->                           
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Star Rating</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Star Rating">
+                            <fieldset>
+                                <input type="text" class="form-control" id="input_city" placeholder="City">
+                            </fieldset>
+                            <fieldset>
+                                <input id="input_from" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check in">
+                            </fieldset>
+                            <fieldset>
+                                <input id="input_to" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check out">
+                            </fieldset>
+                            <!--Optional Fields for User (Not Required for them to search)-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Star Rating</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Star Rating">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Amenities</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Amenities">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Price</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Price">
+                                </div>
+                            </div>
+                            <!--End of Optional Fields for User (Not Required for them to search)-->
+                            <!--Search Button-->
+                            <div class="col-sm-offset-4 col-sm-5">
+                                    <button class="btn btn-default btn-large" data-toggle="modal" data-target="#searchHotelModal">
+                                       Search
+                                    </button>
+                            </div>
+                            <div class="container" id="executeSearch">
+                                <div class="modal fade" id="hotelSearch" data-backdrop="static">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div id="blankRequired" class="alert alert-danger text-center" role="alert">
+                                                <p>You have not filled out all fields required to complete a search</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>            
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Amenities</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Amenities">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Price</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Price">
-                        </div>
-                    </div>
-                  <!--End of Optional Fields for User (Not Required for them to search)-->
-                  <!--Search Button-->
-                    <div class="col-sm-offset-4 col-sm-5">
-                        <button type="submit" class="btn btn-success">Search</button>
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+</div>
+</div>
+               
+                   
+          
+      
                   <!--End Of Search Button-->
       <!--End Of Modal With Search Parameters-->
 
@@ -185,7 +209,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <a href="http://http://amsul.github.io/pickadate.js">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"  crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/picker.js"></script>
   <script type="text/javascript" src="js/picker.date.js"></script>
   <script type="text/javascript" src="js/travel.js"></script>
