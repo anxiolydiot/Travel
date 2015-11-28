@@ -9,6 +9,17 @@ $("#searchHotelModal").on("hide.bs.modal", function() {
   
  })
 
+$("#slider-range").on("hide.bs.modal", function() {
+    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
+  
+ })
+
+var options = {
+    max_value: 5,
+    step_size: 0.5,
+}
+$(".rating").rate(options);
+    
  //$(".well-searchbox").addClass("picker");//
 //$("#checkinPicker").addClass("picker");
 // })
@@ -59,7 +70,20 @@ $("#searchButton").click(function() {
       return;
     };
   })
-
+ //price slider//
+ $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  })
 });
 
 

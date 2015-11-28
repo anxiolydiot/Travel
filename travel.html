@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.css">
     <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.date.css">
+    <link rel="stylesheet" type="text/css" href="css/priceslider.css">
 
     
   <title>Travel</title>
@@ -58,7 +59,6 @@
   </div>
 </nav>
 <!--END OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
-
 <!--THIS IS THE START OF THE CAROUSEL AT THE TOP OF THE PAGE-->
   <div class="col-md-4 col-md-offset-4">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" class="carousel-header">
@@ -147,9 +147,9 @@
                             </fieldset>
                             <!--Optional Fields for User (Not Required for them to search)-->
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Star Rating</label>
-                                <div class="col-md-8">
-                                    <input type="text" class="form-control" placeholder="Star Rating">
+                                <div class="rating" data-rate-value=5 id="starRating">
+                                <label class="col-md-9 control-label"></label>
+                               
                                 </div>
                             </div>
                             <div class="form-group">
@@ -161,7 +161,12 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Price</label>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control" placeholder="Price">
+                                    <p>
+                                      <label for="amount">Price range:</label>
+                                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                    </p>
+                                    <br /> <br />
+                                <div id="slider-range"></div>
                                 </div>
                             </div>
                             <!--End of Optional Fields for User (Not Required for them to search)-->
@@ -214,6 +219,7 @@
   <script type="text/javascript" src="js/picker.date.js"></script>
   <script type="text/javascript" src="js/travel.js"></script>
   <script type="text/javascript" src="js/carouselHeader.js"></script>
+  <script type="text/javascript" src="js/rater.js"></script>
 
   
 </body>
