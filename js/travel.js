@@ -14,6 +14,11 @@ $("#slider-range").on("hide.bs.modal", function() {
   
  })
 
+$(".dropdown-menu").on("hide.bs.modal", function() {
+    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
+  
+ })
+
 var options = {
     max_value: 5,
     step_size: 0.5,
@@ -62,7 +67,7 @@ to_picker.on('set', function(event) {
 
 var checkInDate = $("#input_from").val().trim();
 var checkOutDate = $("#input_to").val().trim();
-var city = $("#input_city").val().trim();
+
 
 $("#searchButton").click(function() {
   if (checkInDate === "" || checkOutDate === "" || city === ""){
@@ -80,11 +85,21 @@ $("#searchButton").click(function() {
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
-    });
+    })
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   })
-});
 
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+})
+
+$("#btnSearch").click(function(){
+  alert($('.btn-select').text()+", "+$('.btn-select2').text());
+})
+
+
+});
 
 
