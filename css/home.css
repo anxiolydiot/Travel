@@ -90,3 +90,19 @@ a:hover {
   width: 502px;
   margin: 100px auto;
 }
+.ui-slider-horizontal .ui-slider-range {
+    height: 100%;
+    top: 0;
+}
+.ui-slider .ui-slider-range {
+    background-position: 0 0;
+    border: 0 none;
+    display: block;
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 300;
+}
+
+
+
+

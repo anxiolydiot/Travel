@@ -78,17 +78,7 @@
     </nav>
     <!--END OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
 
-    <!--Button That Tiriggers Modal-->
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-md-12">
-                <button class="btn btn-default btn-large" data-toggle="modal" data-target="#myModal">
-                    Search For Hotels
-                </button>
-            </div>
-        </div>
-    </div>
-    <!--End Of Button That Triggers Modal-->
+   
 
         <!--THIS IS THE START OF THE CAROUSEL AT THE TOP OF THE PAGE-->
     <div class="col-md-4 col-md-offset-4">
@@ -104,9 +94,11 @@
             <div class="carousel-inner" role="listbox">
                 <!--NYC Picture for Carousel Header-->
                 <div class="item active">
-                    <a href="http://www.newyork.com/" target="_blank">
+                    <button class="btn btn-default btn-large" id="showNYC">
+                                  See NY Hotels
+                              </button>
                         <img src="img/nyc.jpg" alt="...">
-                    </a>
+                   
                     <div class="carousel-caption">
                     </div>
                 </div>
@@ -154,10 +146,10 @@
                         <form class="form-horizontal" role="form">
                             <div class="form-group">
                                 <label class="col-md-4 control-label"></label>
-                                <div class="col-md-8">
+                                <div class="col-md-12">
                                     <form>
                                         <div class="well carousel-search hidden-phone">
-                                            <div class="btn-group">
+                                            <div class="btn-group" id="requiredCity">
                                                 <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#"> Choose a city or browse all<span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#">New York</a>
@@ -198,29 +190,41 @@
                                             <label class="col-md-9 control-label"></label>
 
                                         </div>
-                                    </div>
-                                    <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
                                         <label class="col-md-4 control-label">Amenities</label>
-                                        <div class="col-md-8">
-                                            <input type="text" class="form-control" placeholder="Amenities">
+                                         <div class="form-group">
+                                         <label class="col-lg-2 control-label"></label>
+                                        <div class="col-md-10">
+                                          <label class="checkbox-inline">
+                                            <input type="checkbox" name="radio"> Dining
+                                          </label>
+                                          <label class="checkbox-inline">
+                                            <input type="checkbox" name="radio"> Exercise Facility 
+                                          </label>
+                                          <label class="checkbox-inline">
+                                        <input type="checkbox" name="radio"> Swimming Pool
+                                        </label>
+                                        <label class="checkbox-inline">
+                                                <input type="checkbox" name="radio"> Wifi
+                                        </label> 
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Price</label>
-                                        <div class="col-md-8">
-                                            <p>
-                                                <label for="amount">Price range:</label>
-                                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                            </p>
-                                            <br />
-                                            <br />
-                                            <div id="slider-range"></div>
+                           
+                                        
+                                        <div class="col-md-12">
+                                          
+                                                <label for="amount"></label>
+                                                <input type="text" id="amount" readonly style="border:0; font-weight:bold;">
+                                            
                                         </div>
-                                    </div>
+                                        
+
+                                    
+                                    <div id="slider-range"></div>
                                     <!--End of Optional Fields for User (Not Required for them to search)-->
                                     <!--Search Button-->
                                     <div class="col-sm-offset-4 col-sm-5">
-                                        <button class="btn btn-default btn-large" data-toggle="modal" data-target="#searchHotelModal">
+                                        <button class="btn btn-default btn-large" data-toggle="modal" data-target="#searchHotelModal" id="searchButton">
                                             Search
                                         </button>
                                     </div>
@@ -228,8 +232,7 @@
                                         <div class="modal fade" id="hotelSearch" data-backdrop="static">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
-                                                    <div id="blankRequired" class="alert alert-danger text-center" role="alert">
-                                                        <p>You have not filled out all fields required to complete a search</p>
+                
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,9 +246,13 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
+
+
+
+<div class="alert alert-warning alert-dismissible" role="alert" id="blankRequired">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Warning!</strong> You have not filled out all fields required to complete a search.
+</div>
 
     <!--End Of Search Button-->
     <!--End Of Modal With Search Parameters-->

@@ -1,34 +1,41 @@
 $(document).ready(function() {
+  //revealing modal search box and search parameters//
   $("#myModal").on("hide.bs.modal", function() {
     $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
 
   })
 
-$("#searchHotelModal").on("hide.bs.modal", function() {
-    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
-  
- })
+$('.alert').hide();
+$("#resultsSection").hide();
+$('#slider-range').show();
 
-$("#slider-range").on("hide.bs.modal", function() {
-    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
-  
- })
 
-$(".dropdown-menu").on("hide.bs.modal", function() {
-    $("[data-target='#modalSearch']").fadeTo("slow", 0.25);
-  
- })
+$("#showNYC").click(function() { 
+ $("#resultsSection").show();
+ 
+})
 
+//$('.alert .close').on("click", function(y) {
+//y.stopPropagation();
+//y.preventDefault();
+//$(this).parent().hide();
+//})
+  
+//end revealing modal search box and search parameters//
+//star rating//
 var options = {
     max_value: 5,
     step_size: 0.5,
 }
 $(".rating").rate(options);
-    
+//end star rating//    
+ 
+
  //$(".well-searchbox").addClass("picker");//
 //$("#checkinPicker").addClass("picker");
 // })
 
+//date picker//
 var from_$input = $('#input_from').pickadate(),
     from_picker = from_$input.pickadate('picker')
 
@@ -62,20 +69,23 @@ to_picker.on('set', function(event) {
     from_picker.set('max', false)
   }
 })
+//end date picker//
 
-//check for blank required fields//
+//check for blank date fields//
 
 var checkInDate = $("#input_from").val().trim();
 var checkOutDate = $("#input_to").val().trim();
 
 
-$("#searchButton").click(function() {
-  if (checkInDate === "" || checkOutDate === "" || city === ""){
-       $("#blankRequired").slideup(500);
-      return;
-    };
-  })
+//$("#searchButton").click(function() {
+  //if (checkInDate === "" || checkOutDate === "" || city === ""){
+       //$("#blankRequired").slidedown(500);
+     // return;
+   // };
+ // })
  //price slider//
+ 
+//price slider//
  $(function() {
     $( "#slider-range" ).slider({
       range: true,
@@ -89,7 +99,8 @@ $("#searchButton").click(function() {
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   })
-
+//price slider end//
+//Modal Dropdown for Picking Cities//
 $(".dropdown-menu li a").click(function(){
   var selText = $(this).text();
   $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
@@ -98,8 +109,17 @@ $(".dropdown-menu li a").click(function(){
 $("#btnSearch").click(function(){
   alert($('.btn-select').text()+", "+$('.btn-select2').text());
 })
+// End Modal Dropdown for Picking Cities//
 
+//detect if no city is selcted and display message to inform the user, if this is the case//
+$("#searchButton").click(function(event) {
+  if ($("#requiredCity").find('option:selected').length < 1) {
+      ($("#blankRequired")).show();
+      
+      return;
+    }
+  else window.location.href = "travel.html";
 
+  })   
 });
-
-
+// end detect if no city is selcted and display message to inform the user, if this is the case//
