@@ -10,9 +10,13 @@ $("#resultsSection").hide();
 $('#slider-range').show();
 
 
+
 $("#showNYC").click(function() { 
  $("#resultsSection").show();
- 
+ $("#amsterdam").hide();
+ $("#vegas").hide();
+
+
 })
 
 //$('.alert .close').on("click", function(y) {
