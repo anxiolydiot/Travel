@@ -1,472 +1,461 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <!--Bootstrap Link-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/spacelab/bootstrap.min.css">
-    <!--CSS link-->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.css">
-    <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.date.css">
-    <link rel="stylesheet" type="text/css" href="css/priceslider.css">
-    <link rel="stylesheet" type="text/css" href="css/hotelList.css">
+  <!--Bootstrap Link-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/spacelab/bootstrap.min.css">
+  <!--CSS link-->
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.css">
+  <link rel="stylesheet" type="text/css" href="css/pickerCSS/default.date.css">
+  <link rel="stylesheet" type="text/css" href="css/priceslider.css">
+  <link rel="stylesheet" type="text/css" href="css/hotelList.css">
 
 
-    <title>Travel</title>
+  <title>Travel</title>
 </head>
 
 <body>
 
-    <!--START OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
+  <!--START OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">RCB Discount Hotel</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href=""><span class="sr-only">(current)</span></a>
-                    </li>
-                    <li><a href="#nyc">New York</a>
-                    </li>
-                    <li><a href="#vegas">Las Vegas</a>
-                    </li>
-                    <li><a href="#amsterdam">Amsterdam</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Travel Websites <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://www.expedia.com/" target="_blank">Expedia.com</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="https://www.hotels.com/" target="_blank">Hotels.com</a>
-                            <li class="divider"></li>
-                            <li><a href="https://www.trivago.com/" target="_blank">Trivago.com</a>
-                            <li class="divider"></li>
-                            <li><a href="https://www.kayak.com/" target="_blank">Kayak.com</a>
-                            <li class="divider"></li>
-                            <li><a href="https://www.hotwire.com/" target="_blank">HotWire.com</a>
-                            <li class="divider"></li>
-                            <li><a href="https://www.orbitz.com/" target="_blank">Oribitz.com</a>
-                        </ul>
-                    </li>
-                </ul>
-         
-                <ul class="nav navbar-nav navbar-right">
-    <!--Button That Tiriggers Modal-->
-                  <div class="container-fluid">
-                      <div class="row-fluid">
-                          <div class="col-md-12">
-                              <button class="btn btn-default btn-large" data-toggle="modal" data-target="#myModal">
-                                  Search For Hotels
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-    <!--End Of Button That Triggers Modal-->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--END OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
-
-    <!--Button That Tiriggers Modal-->
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-md-12">
-                <button class="btn btn-default btn-large" data-toggle="modal" data-target="#myModal">
-                    Search For Hotels
-                </button>
-            </div>
-        </div>
-    </div>
-    <!--End Of Button That Triggers Modal-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">RCB Discount Hotel</a>
+      </div>
 
-        <!--THIS IS THE START OF THE CAROUSEL AT THE TOP OF THE PAGE-->
-    <div class="col-md-4 col-md-offset-4">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" class="carousel-header">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href=""><span class="sr-only">(current)</span></a>
+          </li>
+          <li><a href="#nyc">New York</a>
+          </li>
+          <li><a href="#vegas">Las Vegas</a>
+          </li>
+          <li><a href="#amsterdam">Amsterdam</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Travel Websites <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="https://www.expedia.com/" target="_blank">Expedia.com</a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="https://www.hotels.com/" target="_blank">Hotels.com</a>
+                <li class="divider"></li>
+                <li><a href="https://www.trivago.com/" target="_blank">Trivago.com</a>
+                  <li class="divider"></li>
+                  <li><a href="https://www.kayak.com/" target="_blank">Kayak.com</a>
+                    <li class="divider"></li>
+                    <li><a href="https://www.hotwire.com/" target="_blank">HotWire.com</a>
+                      <li class="divider"></li>
+                      <li><a href="https://www.orbitz.com/" target="_blank">Oribitz.com</a>
+            </ul>
+            </li>
+        </ul>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <!--NYC Picture for Carousel Header-->
-                <div class="item active">
-                    <a href="http://www.newyork.com/" target="_blank">
-                        <img src="img/nyc.jpg" alt="...">
-                    </a>
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-                <!--Las Vegas Picture for Carousel Header-->
-                <div class="item">
-                    <a href="http://www.lasvegas.com/" target="_blank">
-                        <img src="img/lasVegas.jpg" alt="...">
-                    </a>
-                    <div class="carousel-caption">
-                    </div>
-                    <!--Amsterdam Picture for Carousel Header-->
-                </div>
-                <div class="item">
-                    <a href="http://www.iamsterdam.com/en/" target="_blank">
-                        <img src="img/amsterdam.jpg" alt="...">
-                    </a>
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <!--END OF CAROUSEL HEADER-->
-    <!--Modal With Search Parameters-->
-    <div class="container" id="modalSearch">
-        <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <button class="close" data-dismiss="modal"><span>&times;</span>
-                    </button>
-                </div>
-                <div class="search-background">
-                    <div class="well-searchbox">
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label class="col-md-4 control-label"></label>
-                                <div class="col-md-8">
-                                    <form>
-                                        <div class="well carousel-search hidden-phone">
-                                            <div class="btn-group">
-                                                <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#"> Choose a city or browse all<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">New York</a>
-                                                    </li>
-                                                    <li><a href="#">Amsterdam</a>
-                                                    </li>
-                                                    <li><a href="#">Las Vegas</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Browse All</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="btn-group">
-                                                <a class="btn dropdown-toggle btn-select2" data-toggle="dropdown" href="#"> Choose A second city (optional) <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">New York</a>
-                                                    </li>
-                                                    <li><a href="#">Amsterdam</a>
-                                                    </li>
-                                                    <li><a href="#">Las Vegas</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input id="input_from" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check in">
-                                    </fieldset>
-                                    <fieldset>
-                                        <input id="input_to" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check out">
-                                    </fieldset>
-                                    <!--Optional Fields for User (Not Required for them to search)-->
-                                    <div class="form-group">
-                                        <div class="rating" data-rate-value=5 id="starRating">
-                                            <label class="col-md-9 control-label"></label>
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Amenities</label>
-                                        <div class="col-md-8">
-                                            <input type="text" class="form-control" placeholder="Amenities">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Price</label>
-                                        <div class="col-md-8">
-                                            <p>
-                                                <label for="amount">Price range:</label>
-                                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                            </p>
-                                            <br />
-                                            <br />
-                                            <div id="slider-range"></div>
-                                        </div>
-                                    </div>
-                                    <!--End of Optional Fields for User (Not Required for them to search)-->
-                                    <!--Search Button-->
-                                    <div class="col-sm-offset-4 col-sm-5">
-                                        <button class="btn btn-default btn-large" data-toggle="modal" data-target="#searchHotelModal">
-                                            Search
-                                        </button>
-                                    </div>
-                                    <div class="container" id="executeSearch">
-                                        <div class="modal fade" id="hotelSearch" data-backdrop="static">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div id="blankRequired" class="alert alert-danger text-center" role="alert">
-                                                        <p>You have not filled out all fields required to complete a search</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-
-    <!--End Of Search Button-->
-    <!--End Of Modal With Search Parameters-->
-<!--Center Hotel Info Header-->
-        <div class="col-md-8">
+        <ul class="nav navbar-nav navbar-right">
+          <!--Button That Tiriggers Modal-->
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-8">
-                <p><span class="hotelsHeader">A list of our Hotel Discounts:</span></p>
-              </div>
-              <div class="col-md-3">
-              </div>
-              <div class="col-md-6">
+            <div class="row-fluid">
+              <div class="col-md-12">
+                <button class="btn btn-default btn-large" data-toggle="modal" data-target="#myModal">
+                  Search For Hotels
+                </button>
               </div>
             </div>
           </div>
-<!--Center Hotel Info Header End-->
+          <!--End Of Button That Triggers Modal-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--END OF GENERIC NAVBAR MIGHT BE REMOVED IF NOT NEEDED-->
 
-<!--START OF RESULTS SECTION-->
-          <div class="container-fluid" id="resultsSection">
-          <!--New York Hotels List Start-->
-          <h1 class="hotelCenter">New York Hotels</h1>
-          <div id="nyc">
+
+
+  <!--THIS IS THE START OF THE CAROUSEL AT THE TOP OF THE PAGE-->
+  <div class="col-md-4 col-md-offset-4">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" class="carousel-header">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <!--NYC Picture for Carousel Header-->
+        <div class="item active">
+          <a href="http://www.newyork.com/" target="_blank">
+            <img src="img/nyc.jpg" alt="...">
+          </a>
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <!--Las Vegas Picture for Carousel Header-->
+        <div class="item">
+          <a href="http://www.lasvegas.com/" target="_blank">
+            <img src="img/lasVegas.jpg" alt="...">
+          </a>
+          <div class="carousel-caption">
+          </div>
+          <!--Amsterdam Picture for Carousel Header-->
+        </div>
+        <div class="item">
+          <a href="http://www.iamsterdam.com/en/" target="_blank">
+            <img src="img/amsterdam.jpg" alt="...">
+          </a>
+          <div class="carousel-caption">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!--END OF CAROUSEL HEADER-->
+  <!--Modal With Search Parameters-->
+  <div class="container" id="modalSearch">
+    <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" data-dismiss="modal"><span>&times;</span>
+          </button>
+        </div>
+        <div class="search-background">
+          <div class="well-searchbox">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-8">
+                  <form>
+                    <div class="well carousel-search hidden-phone">
+                      <div class="btn-group">
+                        <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#"> Choose a city or browse all<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">New York</a>
+                          </li>
+                          <li><a href="#">Amsterdam</a>
+                          </li>
+                          <li><a href="#">Las Vegas</a>
+                          </li>
+                          <li class="divider"></li>
+                          <li><a href="#">Browse All</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="btn-group">
+                        <a class="btn dropdown-toggle btn-select2" data-toggle="dropdown" href="#"> Choose A second city (optional) <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">New York</a>
+                          </li>
+                          <li><a href="#">Amsterdam</a>
+                          </li>
+                          <li><a href="#">Las Vegas</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                  </fieldset>
+                  <fieldset>
+                    <input id="input_from" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check in">
+                  </fieldset>
+                  <fieldset>
+                    <input id="input_to" type="text" class="datepicker fieldset__input js__datepicker picker__input form-control" placeholder="Check out">
+                  </fieldset>
+                  <!--Optional Fields for User (Not Required for them to search)-->
+                  <div class="form-group">
+                    <div class="rating" data-rate-value=5 id="starRating">
+                      <label class="col-md-9 control-label"></label>
+
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Amenities</label>
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" placeholder="Amenities">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Price</label>
+                    <div class="col-md-8">
+                      <p>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                      </p>
+                      <br />
+                      <br />
+                      <div id="slider-range"></div>
+                    </div>
+                  </div>
+                  <!--End of Optional Fields for User (Not Required for them to search)-->
+                  <!--Search Button-->
+                  <div class="col-sm-offset-4 col-sm-5">
+                    <button class="btn btn-default btn-large" data-toggle="modal" data-target="#searchHotelModal">
+                      Search
+                    </button>
+                  </div>
+                  <div class="container" id="executeSearch">
+                    <div class="modal fade" id="hotelSearch" data-backdrop="static">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div id="blankRequired" class="alert alert-danger text-center" role="alert">
+                            <p>You have not filled out all fields required to complete a search</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!--End Of Search Button-->
+  <!--End Of Modal With Search Parameters-->
+  <!--Center Hotel Info Header-->
+  <div class="col-md-8">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <p><span class="hotelsHeader">A list of our Hotel Discounts:</span></p>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+    <!--Center Hotel Info Header End-->
+
+    <!--START OF RESULTS SECTION-->
+    <div class="container-fluid" id="resultsSection">
+      <!--New York Hotels List Start-->
+      <h1 class="hotelCenter">New York Hotels</h1>
+      <div id="nyc">
+        <br>
+        <!--Hyatt Times Square Hotel Info Start-->
+        <div class="nycHotels">
+          <div class="col-md-12">
+            <div class="container-fluid resultItem">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="http://timessquare.hyatt.com/en/hotel/home.html">
+                    <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/hyatt1.jpg">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h4>Hyatt Times Square New York</h4>
+                  <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <small>Rating: Great (4.5/5)</small></p>
+                  <p>4 Star Hotel</p>
+                  <p>135 W 45th St, New York, NY 10036</p>
+                  <p><small><a href="https://www.hotwire.com/">Hotwire</a></small></p>
+                </div>
+                <div class="col-md-2">
+                  <div class="chooseHotel">
+                    <h3><strong>$244</strong></h3>
+                    <button type="button" class="btn btn-success">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Hyatt Times Square Hotel Info End-->
+        <br>
+        <br>
+        <!--Holiday Inn NY Hotel Info Start-->
+        <div class="nycHotels">
+          <div class="col-md-12">
+            <div class="container-fluid resultItem">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="http://www.ihg.com/holidayinn/hotels/us/en/new-york/nycup/hoteldetail?qRef=sr&qDest=New+York+City%2C+NY%2C+United+States&qRpn=1&qChld=0&qSrt=sBR&qSHp=1&qSmP=3&qGRM=0&qLng=-73.985626&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qFRA=1&qLat=40.757996&qRRSrt=rt&qRad=30&qRpp=12&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn&qWch=0&icdv=99504425#">
+                    <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/holidayinn2.jpeg">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h4>Holiday Inn New York</h4>
+                  <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <small>Rating: Good (4/5)</small></p>
+                  <p>4 Star Hotel</p>
+                  <p>440 W 57th St, New York, NY 10019</p>
+                  <p><small><a href="https://www.hotels.com/">Hotels.com</a></small></p>
+                </div>
+                <div class="col-md-2">
+                  <div class="chooseHotel">
+                    <h3><strong>$221</strong></h3>
+                    <button type="button" class="btn btn-success">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Holiday Inn NY Hotel Info End-->
+        <!--Hotel Pennsylvania Info Start-->
+        <div class="nycHotels">
+          <div class="col-md-12">
+            <div class="container-fluid resultItem">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="http://www.hotelpenn.com/">
+                    <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/hotelPenn.jpg">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h4>Hotel Pennsylvania</h4>
+                  <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <small>Rating: Fair (2.8/5)</small></p>
+                  <p>3 Star Hotel</p>
+                  <p>401 7th Avenue, New York, NY 10001</p>
+                  <p><small><a href="https://www.expedia.com/">Expedia</a></small></p>
+                </div>
+                <div class="col-md-2">
+                  <div class="chooseHotel">
+                    <h3><strong>$129</strong></h3>
+                    <button type="button" class="btn btn-success">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Hotel Pennsylvania Info End-->
+        <!--Las Vegas Hotels List-->
+        <h1 class="hotelCenter">Las Vegas Hotels</h1>
+        <div id="vegas">
           <br>
-<!--Hyatt Times Square Hotel Info Start-->
-            <div class="nycHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="http://timessquare.hyatt.com/en/hotel/home.html">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/hyatt1.jpg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h4>Hyatt Times Square New York</h4>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Great (4.5/5)</small></p>
-                      <p>4 Star Hotel</p>
-                      <p>135 W 45th St, New York, NY 10036 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.hotwire.com/">Hotwire</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$244</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
+          <!--Palazzo Info Start-->
+          <div class="lasVegasHotels">
+            <div class="col-md-12">
+              <div class="container-fluid resultItem">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="http://www.palazzo.com//">
+                      <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/palazzo1.jpg">
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>The Palazzo Resort Hotel & Casino</h3>
+                    <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <small>Rating: Excellent (5/5)</small></p>
+                    <p>5 Star Hotel</p>
+                    <p>3325 S Las Vegas Blvd, Las Vegas, NV 89109</p>
+                    <p><small><a href="https://www.kayak.com/">Kayak</a></small></p>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="chooseHotel">
+                      <h3><strong>$229</strong></h3>
+                      <button type="button" class="btn btn-success">Select</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-<!--Hyatt Times Square Hotel Info End-->
-            <br>
-            <br>
-<!--Holiday Inn NY Hotel Info Start-->
-            <div class="nycHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="http://www.ihg.com/holidayinn/hotels/us/en/new-york/nycup/hoteldetail?qRef=sr&qDest=New+York+City%2C+NY%2C+United+States&qRpn=1&qChld=0&qSrt=sBR&qSHp=1&qSmP=3&qGRM=0&qLng=-73.985626&qRdU=1&qRms=1&srb_u=1&qAdlt=1&qPSt=0&qFRA=1&qLat=40.757996&qRRSrt=rt&qRad=30&qRpp=12&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn&qWch=0&icdv=99504425#">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/holidayinn2.jpeg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h4>Holiday Inn New York</h4>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Good (4/5)</small></p>
-                      <p>4 Star Hotel</p>
-                      <p>440 W 57th St, New York, NY 10019 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.hotels.com/">Hotels.com</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$221</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
+          </div>
+          <!--Palazzo Info End-->
+          <!--Treasure Island Info Start-->
+          <div class="lasVegasHotels">
+            <div class="col-md-12">
+              <div class="container-fluid resultItem">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="http://www.treasureisland.com//">
+                      <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/treasureIsland1.jpg">
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Treasure Island</h3>
+                    <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <small>Rating: Good (2.8/5)</small></p>
+                    <p>4 Star Hotel</p>
+                    <p>3300 S Las Vegas Blvd, Las Vegas, NV 89109</p>
+                    <p><small><a href="https://www.trivago.com/">Trivago</a></small></p>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="chooseHotel">
+                      <h3><strong>$139</strong></h3>
+                      <button type="button" class="btn btn-success">Select</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-<!--Holiday Inn NY Hotel Info End-->
-<!--Hotel Pennsylvania Info Start-->
-            <div class="nycHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="http://www.hotelpenn.com/">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/nycHotels/hotelPenn.jpg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h4>Hotel Pennsylvania</h4>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Fair (2.8/5)</small></p>
-                      <p>3 Star Hotel</p>
-                      <p>401 7th Avenue, New York, NY 10001 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.expedia.com/">Expedia</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$129</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
+          </div>
+          <!--Treasure Island Info End-->
+          <!--MGM Grand Info Start-->
+          <div class="lasVegasHotels">
+            <div class="col-md-12">
+              <div class="container-fluid resultItem">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="https://www.mgmgrand.com/en.html">
+                      <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/MGMGrand1.jpg">
+                    </a>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>MGM Grand Las Vegas Hotel & Casino</h3>
+                    <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <small>Rating: Great (4/5)</small></p>
+                    <p>4 Star Hotel</p>
+                    <p>3799 S Las Vegas Blvd, Las Vegas, NV 89109</p>
+                    <p><small><a href="https://www.orbitz.com/">Orbitz</a></small></p>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="chooseHotel">
+                      <h3><strong>$199</strong></h3>
+                      <button type="button" class="btn btn-success">Select</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-<!--Hotel Pennsylvania Info End-->
+          </div>
+          <!--MGM Grand Info End-->
           <!--Las Vegas Hotels List-->
-          <h1 class="hotelCenter">Las Vegas Hotels</h1>
-          <div id="vegas">
-          <br>
-<!--Palazzo Info Start-->
-            <div class="lasVegasHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="http://www.palazzo.com//">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/palazzo1.jpg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h3>The Palazzo Resort Hotel & Casino</h3>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Excellent (5/5)</small></p>
-                      <p>5 Star Hotel</p>
-                      <p>3325 S Las Vegas Blvd, Las Vegas, NV 89109 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.kayak.com/">Kayak</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$189</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-<!--Palazzo Info End-->
-<!--Treasure Island Info Start-->
-            <div class="lasVegasHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="http://www.treasureisland.com//">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/treasureIsland1.jpg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h3>Treasure Island</h3>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Good (2.8/5)</small></p>
-                      <p>4 Star Hotel</p>
-                      <p>3300 S Las Vegas Blvd, Las Vegas, NV 89109 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.trivago.com/">Trivago</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$129</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-<!--Treasure Island Info End-->
-<!--MGM Grand Info Start-->
-            <div class="lasVegasHotels">
-              <div class="col-md-12">
-                <div class="container-fluid resultItem">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="https://www.mgmgrand.com/en.html">
-                        <img class="img-responsive hotelThumbnail" class="hotelPic" src="img/lasVegasHotels/MGMGrand1.jpg">
-                      </a>
-                    </div>
-                    <div class="col-md-6">
-                      <h3>MGM Grand Las Vegas Hotel & Casino</h3>
-                      <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <small>Rating: Great (4/5)</small></p>
-                      <p>4 Star Hotel</p>
-                      <p>3799 S Las Vegas Blvd, Las Vegas, NV 89109 <a href="#">Select</a></p>
-                      <p><small><a href="https://www.orbitz.com/">Orbitz</a></small></p>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="chooseHotel">
-                        <h3><strong>$189</strong></h3>
-                        <button type="button" class="btn btn-success">Select</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-<!--MGM Grand Info End-->
- <!--Las Vegas Hotels List-->
           <h1 class="hotelCenter">Amsterdam Hotels</h1>
           <div id="amsterdam">
-          <br>
-<!--Park Hotel Info Start-->
+            <br>
+            <!--Park Hotel Info Start-->
             <div class="amsterdamHotels">
               <div class="col-md-12">
                 <div class="container-fluid resultItem">
@@ -483,7 +472,7 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <small>Rating: Great (4/5)</small></p>
                       <p>4 Star Hotel</p>
-                      <p>Stadhouderskade 25, 1071 ZD Amsterdam, Netherlands <a href="#">Select</a></p>
+                      <p>Stadhouderskade 25, 1071 ZD Amsterdam, Netherlands</p>
                       <p><small><a href="https://www.kayak.com/">Kayak</a></small></p>
                     </div>
                     <div class="col-md-2">
@@ -496,8 +485,8 @@
                 </div>
               </div>
             </div>
-<!--Park Hotel Info End-->
-<!--Atlanta Hotel Info Start-->
+            <!--Park Hotel Info End-->
+            <!--Atlanta Hotel Info Start-->
             <div class="amsterdamHotels">
               <div class="col-md-12">
                 <div class="container-fluid resultItem">
@@ -513,12 +502,12 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <small>Rating: Good (3/5)</small></p>
                       <p>2 Star Hotel</p>
-                      <p>Rembrandtplein 8-10, 1017 CV Amsterdam, Netherlands <a href="#">Select</a></p>
+                      <p>Rembrandtplein 8-10, 1017 CV Amsterdam, Netherlands</p>
                       <p><small><a href="https://www.expedia.com/">Expedia</a></small></p>
                     </div>
                     <div class="col-md-2">
                       <div class="chooseHotel">
-                        <h3><strong>$189</strong></h3>
+                        <h3><strong>$161</strong></h3>
                         <button type="button" class="btn btn-success">Select</button>
                       </div>
                     </div>
@@ -526,9 +515,9 @@
                 </div>
               </div>
             </div>
-<!--Atlanta Hotel Info End-->
-<!--Grand Hotel Info Start-->
-            <div class="amsterdamHotels">
+            <!--Atlanta Hotel Info End-->
+            <!--Grand Hotel Info Start-->
+            <div class="amsterdamHotels" class="star5">
               <div class="col-md-12">
                 <div class="container-fluid resultItem">
                   <div class="row">
@@ -545,12 +534,12 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <small>Rating: Excellent (5/5)</small></p>
                       <p>5 Star Hotel</p>
-                      <p>Prins Hendrikkade 108, 1011 AK Amsterdam, Netherlands <a href="#">Select</a></p>
+                      <p>Prins Hendrikkade 108, 1011 AK Amsterdam, Netherlands</p>
                       <p><small><a href="https://www.hotels.com/">Hotels.com</a></small></p>
                     </div>
                     <div class="col-md-2">
                       <div class="chooseHotel">
-                        <h3><strong>$189</strong></h3>
+                        <h3><strong>$209</strong></h3>
                         <button type="button" class="btn btn-success">Select</button>
                       </div>
                     </div>
@@ -558,20 +547,26 @@
                 </div>
               </div>
             </div>
-<!--Grand Hotel Info End-->
+            <!--Grand Hotel Info End-->
+            <!--Hotel Info End-->
+
+
+
+            <!--START of Right SIDEBAR-->
 
 
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    <a href="http://http://amsul.github.io/pickadate.js">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/picker.js"></script>
-        <script type="text/javascript" src="js/picker.date.js"></script>
-        <script type="text/javascript" src="js/travel.js"></script>
-        <script type="text/javascript" src="js/carouselHeader.js"></script>
-        <script type="text/javascript" src="js/rater.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+            <a href="http://http://amsul.github.io/pickadate.js">
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+              <script type="text/javascript" src="js/picker.js"></script>
+              <script type="text/javascript" src="js/picker.date.js"></script>
+              <script type="text/javascript" src="js/travel.js"></script>
+              <script type="text/javascript" src="js/carouselHeader.js"></script>
+              <script type="text/javascript" src="js/rater.js"></script>
+              <script type="text/javascript" src="js.starRating.js"></script>
 
 
 </body>

@@ -4,4 +4,6 @@
 
 .hotelCenter {
   text-align: center;
+  border: 3px;
+  border-color: black;
 }
